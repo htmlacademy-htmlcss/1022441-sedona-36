@@ -4,14 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
   let closeButton = document.querySelector('.js-close-modal');
   let modalWindow = document.querySelector('.modal-container');
 
-  showButton.addEventListener('click', function(e) {
+  if (showButton !== null) {
+    showButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      modalWindow.classList.remove('hide');
+    });
+  }
 
-    e.preventDefault();
-    modalWindow.classList.remove('hide');
-  });
-
-  closeButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    modalWindow.classList.add('hide');
-  });
+  if (closeButton !== null) {
+    closeButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      modalWindow.classList.add('hide');
+    });
+  }
 });
