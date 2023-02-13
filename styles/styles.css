@@ -732,10 +732,13 @@ body {
 .form-group-column {
   display: flex;
   flex-grow: 1;
+  row-gap: 50px;
 }
-.form-group-column.first {
 
+.form-group-column.first {
+  flex-wrap: wrap;
 }
+
 .form-group-column.second {
   justify-content: flex-end;
 }
@@ -752,6 +755,7 @@ body {
 }
 .buttons-group .button {
   display: block;
+  word-wrap: anywhere;
 }
 
 .hotels-filter-title {
