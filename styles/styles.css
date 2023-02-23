@@ -119,25 +119,23 @@ body {
 .apply-filters-button {
   border: none;
   line-height: 20px;
-  padding: 14px 34px 14px 35px;
-  margin-bottom: 17px;
+  padding: 8px 50px 8px 51px;
+  margin-bottom: 37px;
 }
 
 .clear-filters-button {
   background-color: transparent;
   box-sizing: border-box;
   border: none;
-  text-transform: none;
   font-size: 16px;
   min-width: 154px;
   height: auto;
   margin: 0 auto;
-  font-weight: normal;
+  font-weight: 700;
   padding: 3px 12px 3px 12px;
 }
 .clear-filters-button:focus {
   outline: 3px solid #83B3D3;
-
   border-radius: 4px;
 }
 .clear-filters-button:hover {
@@ -796,7 +794,7 @@ body {
 .range-wrapper-inputs {
   display: flex;
   margin-top: 4px;
-  margin-bottom: 28px;
+  margin-bottom: 44px;
 }
 
 .catalog-filter-label {
