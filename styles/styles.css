@@ -680,14 +680,20 @@ body {
 /* Page Footer */
 
 .page-footer {
-  display: flex;
   box-sizing: border-box;
-  align-items: center;
   width: 100%;
   padding: 40px 70px 34px;
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: [footercol1] 1fr [footercol2] 3fr [footercol3] 1fr;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .footer-social {
+  grid-column-start: footercol1;
   margin: 0;
   padding:0;
 }
@@ -695,17 +701,18 @@ body {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 5px 0 0 0;
+  margin: 17px 0 0 12px;
   padding: 0;
+  gap: 24px;
 }
 
 .footer-social-item {
   list-style: none;
   box-sizing: border-box;
-  min-width: 47px;
-  height: 40px;
+  min-width: 24px;
+  height: 17px;
   margin: 0;
-  padding: 0 0 2px 0;
+  padding: 0;
 }
 
 .button-socials {
@@ -732,13 +739,19 @@ body {
   color: rgba(104, 162, 202, 0.3);
 }
 
+.socials-svg-area {
+  width: 24px;
+  height: 17px;
+}
+
+
 /** Footer Contacts **/
 
 .footer-contacts {
-  flex-grow: 1;
+  grid-column-start: footercol2;
   text-align: center;
-  margin: 3px 0 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 0 0 0 28px;
 }
 
 .footer-contacts-phone {
@@ -748,6 +761,7 @@ body {
   font-weight: 400;
   color: #000000;
   text-decoration: none;
+  margin-top: 5px;
 }
 
 .footer-contacts-phone:focus {
@@ -764,8 +778,16 @@ body {
 }
 
 .footer-logo {
-  margin: 9px 0 0 0;
+  grid-column-start: footercol3;
+  margin: 0;
   padding: 0;
+  text-align: right;
+}
+
+.htmlacademy-svg-area {
+  width: 115px;
+  height: 33px;
+  margin-top: 8px;
 }
 
 .htmlacademy-link {
