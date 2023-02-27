@@ -184,11 +184,12 @@ body {
 .search-button {
   border: none;
   box-sizing: border-box;
-  min-width: 376px;
+  width: 376px;
   padding: 8px 15px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  overflow-wrap: break-word;
 }
 
 /* Page Header */
@@ -219,7 +220,8 @@ body {
 .navigation {
   position: relative;
   display: flex;
-  flex-grow: 1;
+  gap: 2px;
+  justify-content: space-between;
   margin: 0 0 0 184px;
 }
 
@@ -231,6 +233,7 @@ body {
   padding: 0;
   margin: 0;
   z-index: 100;
+  width: 608px;
 }
 
 .navigation-list-item {
@@ -264,9 +267,11 @@ body {
 }
 
 .navigation-user {
-  display: flex;
-  margin: 0 0 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 0;
   padding: 0;
+  width: 265px;
 }
 
 .navigation-user-item {
@@ -276,7 +281,7 @@ body {
 }
 
 .navigation-user-item:last-child {
-  margin: 14px 0 0 0;
+  margin: 14px 0 0 20px;
 }
 
 .navigation-user-link {
@@ -312,10 +317,6 @@ body {
   font-size: 10px;
   color: #FFFFFF;
   text-align: center;
-}
-
-.navigation-button {
-  margin-left: 19px;
 }
 
 /* Main Page Content Elements */
@@ -362,7 +363,8 @@ body {
 }
 
 .advantages-section-subtitle {
-  width: 100%;
+  width: 700px;
+  box-sizing: border-box;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -646,7 +648,7 @@ body {
 
 .subscription-form-input {
   width: 452px;
-  height: 52px;
+  min-height: 52px;
   box-sizing: border-box;
   padding: 8px 10px 8px 21px;
   border: none;
@@ -666,7 +668,7 @@ body {
 }
 
 .subscription-button {
-  min-width: 232px;
+  width: 232px;
   padding: 8px 15px;
   box-sizing: border-box;
   border: none;
@@ -675,6 +677,7 @@ body {
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
+  overflow-wrap: break-word;
 }
 
 /* Page Footer */
