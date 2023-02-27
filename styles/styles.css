@@ -129,6 +129,24 @@ body {
   background-color: #82B3D3;
 }
 
+/** Button White **/
+
+.button-white {
+  background-color: #FFFFFF;
+}
+
+.button-white:focus {
+  background-color: #FFFFFF;
+}
+
+.button-white:hover {
+  background-color: #FFFFFF;
+}
+
+.button-white:active {
+  background-color: #FFFFFF;
+}
+
 /** Button Green **/
 
 .button-green {
@@ -894,7 +912,6 @@ body {
 /* Hotels Filters Section */
 
 .hotels-filter {
-  /*display: flex;*/
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 0 none;
@@ -1156,11 +1173,6 @@ body {
   margin-right: 70px;
 }
 
-.pagination-select {
-  width: 160px;
-  margin-left: 47px;
-}
-
 /* Hotels Catalog */
 
 .catalog-hotels-result-header {
@@ -1183,7 +1195,7 @@ body {
 .hotels-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 0 18px;
+  gap: 20px 20px;
   padding: 0 53px 0 73px;
   margin: 0 0 66px 0;
 }
@@ -1194,6 +1206,8 @@ body {
   width: 340px;
   margin: 0;
   padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotel-card-details {
@@ -1323,7 +1337,10 @@ body {
   border-color: #F2F2F2;
 }
 
-.pagination-item.current .pagination-link {
+.pagination-item.current .pagination-link,
+.pagination-item.button-white .pagination-link,
+.pagination-item.button-white .pagination-link:hover,
+.pagination-item.button-white .pagination-link:active {
   color: #000000;
 }
 
@@ -1331,11 +1348,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-settings {
-  color: #333333;
-  align-self: self-start;
-  margin-top: 6px;
+.pagination-item.button-white {
+  border: none;
 }
+
 
 .hotels-sorting-set {
   display: flex;
