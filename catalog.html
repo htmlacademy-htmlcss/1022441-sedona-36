@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-  <script defer type="text/javascript" src="scripts/modalDialog.js"></script>
+  <script defer src="scripts/modalDialog.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -122,17 +122,17 @@
             <div class="range">
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label from">
-                  <input type="text" class="range-input" value="0" name="min-price">
+                  <input type="text" class="range-input" name="min-price" placeholder="0">
                   <span class="range-input-text">от</span>
                 </label>
                 <label class="catalog-filter-label to">
-                  <input type="text" class="range-input" value="9000" name="max-price">
+                  <input type="text" class="range-input" name="max-price" placeholder="9000">
                   <span class="range-input-text">до</span>
                 </label>
               </div>
               <div class="range-scale-wrapper">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0%; width: 81%">
+                  <div class="range-bar" style="left: 0%; width: 77%">
                     <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
@@ -157,23 +157,24 @@
         <h3 class="catalog-hotels-title">Найдено Гостиниц: 38</h3>
         <div class="hotels-sorting-set">
           <select class="select-control sorting-select" aria-label="Сортировка">
+            <option hidden>Выберите значение</option>
             <option value="cheap">Сначала дешёвые</option>
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
           <div class="sorting-buttons">
             <a href="#" class="button-view view-current">
-            <span class="visually-hidden">Таблица</span>
-            <img src="images/icons/table.png" width="16" height="14" alt="Показать как таблицу.">
-          </a>
+              <span class="visually-hidden">Таблица</span>
+              <img src="images/icons/table.png" width="16" height="14" alt="Показать как таблицу.">
+            </a>
             <a class="button-view" href="#">
-            <span class="visually-hidden">Слайдшоу</span>
-            <img src="images/icons/slideshow.png" width="16" height="14" alt="Показать как слайдшоу.">
-          </a>
+              <span class="visually-hidden">Слайдшоу</span>
+              <img src="images/icons/slideshow.png" width="16" height="14" alt="Показать как слайдшоу.">
+            </a>
             <a class="button-view" href="#">
-            <span class="visually-hidden">Список</span>
-            <img src="images/icons/list.png" width="16" height="14" alt="Показать как список.">
-          </a>
+              <span class="visually-hidden">Список</span>
+              <img src="images/icons/list.png" width="16" height="14" alt="Показать как список.">
+            </a>
           </div>
         </div>
       </div>
@@ -255,21 +256,21 @@
       <div class="pagination-container">
         <ul class="pagination">
           <li class="pagination-item current">
-            <a class="pagination-link">1</a>
+            <a class="pagination-link" href="#">1</a>
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">3</a>
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item button-white">
             <a class="pagination-link" href="#">...</a>
           </li>
-          <li class="pagination-item button-blue">
+          <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
