@@ -365,8 +365,8 @@ body {
 }
 
 .advantages-image {
-  width: 800px;
   object-fit:cover;
+  height: auto;
 }
 
 .advantages-section-header {
