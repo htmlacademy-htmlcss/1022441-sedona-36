@@ -1420,16 +1420,17 @@ body {
 
 .hotels-sorting-set {
   display: grid;
-  width: 521px;
-  grid-template-columns: 292px auto;
-  gap: 70px;
+  width: 522px;
+  grid-template-columns: 292px auto 160px;
   margin-top: 3px;
 }
 
 .sorting-buttons {
+  grid-column-start: 3;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  column-gap: 8px;
+  row-gap: 8px;
 }
 
 .button-view {
